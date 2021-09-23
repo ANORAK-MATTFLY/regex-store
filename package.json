@@ -5,5 +5,9 @@
   "main": "regex.js",
   "author": "Ben Matanda",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^4.4.3"
+  }
 }
