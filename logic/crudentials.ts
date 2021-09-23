@@ -3,6 +3,7 @@ import { credentials } from "../interfaces/credentials";
 export class CredentialsValidation implements credentials {
     isEmail(email: string): boolean {
         const pattern = new RegExp("^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$");
-        return pattern.test(email);
+        const validationCheck = pattern.test(email);
+        return validationCheck;
     }
 }
