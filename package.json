@@ -1,0 +1,9 @@
+{
+  "name": "regex_utils",
+  "version": "1.0.0",
+  "description": "An npm package that makes regex easy to work with",
+  "main": "regex.js",
+  "author": "Ben Matanda",
+  "license": "MIT",
+  "private": false
+}
