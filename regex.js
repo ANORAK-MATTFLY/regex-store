@@ -1,12 +1,11 @@
 "use strict";
 exports.__esModule = true;
-exports.RegexUtils = void 0;
+exports.RegexStore = void 0;
 var credentials_1 = require("./logic/credentials");
-var RegexUtils = /** @class */ (function () {
-    function RegexUtils() {
+var RegexStore = /** @class */ (function () {
+    function RegexStore() {
     }
-    RegexUtils.credentials = new credentials_1.CredentialsValidation();
-    return RegexUtils;
+    RegexStore.credentials = new credentials_1.CredentialsValidation();
+    return RegexStore;
 }());
-exports.RegexUtils = RegexUtils;
-console.log(RegexUtils.credentials.Is_Email("ben@gmail.com"));
+exports.RegexStore = RegexStore;
