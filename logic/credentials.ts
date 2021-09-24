@@ -1,6 +1,11 @@
 import { credentials } from "../interfaces/credentials_interface";
 
 export class CredentialsValidation implements credentials {
+    Is_Name(name: string): boolean {
+        const pattern = new RegExp("^[a-zA-Z ]{2,30}$");
+        const Name_Matches_Pattern = pattern.test(name);
+        return Name_Matches_Pattern;
+    }
     Is_Email(email: string): boolean {
         const pattern = new RegExp("^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$");
         const Email_Matches_Pattern = pattern.test(email);
@@ -30,5 +35,4 @@ export class CredentialsValidation implements credentials {
         const Password_Matches_Pattern: boolean = pattern.test(password);
         return Password_Matches_Pattern;
     }
-
 }
