@@ -26,7 +26,7 @@ export class CredentialsValidation implements credentials {
      * @param {String} string - String on which to perform the validation.
      */
     Is_Password_with_At_Least_Eight_Characters_An_Uppercase_Letter_A_Lowercase_Letter_One_Number_A_Special_Character(password: string): boolean{
-        const pattern: RegExp = new RegExp(/^(?=[^\d_].*?\d)\w(\w|[!@#$%]){7,20}/);
+        const pattern: RegExp = new RegExp(/^(?=[^\d_].*?\d)\w(\w|[!@#$%]){7,20}$/);
         const Password_Matches_Pattern: boolean = pattern.test(password);
         return Password_Matches_Pattern;
     }
