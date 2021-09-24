@@ -1,6 +1,6 @@
 {
   "name": "regex-store",
-  "version": "0.7.3",
+  "version": "0.8.3",
   "description": "An npm package that makes regex easy to work with",
   "main": "regex.js",
   "author": "Ben Matanda",
