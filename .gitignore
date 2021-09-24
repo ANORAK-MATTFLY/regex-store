@@ -1,6 +1,6 @@
 node_modules
 
 # ignore js files
-./intefaces/credentials_interface.js
-./logic/credentials.js
-regex.js
+/intefaces/credentials_interface.js
+/logic/credentials.js
+./regex.js
