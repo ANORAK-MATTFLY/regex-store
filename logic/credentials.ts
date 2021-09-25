@@ -24,7 +24,7 @@ export class CredentialsValidation implements credentials {
      * that includes minimum eight characters, and one number and one special character.
      * @param {String} string - String on which to perform the validation.
      */
-    Is_Password_with_At_Least_Eight_Characters_A_Number_A_Special_Character(password: string): boolean{
+    Is_Password_with_At_Least_Eight_Characters_A_Number_A_Special_Character(password: string): boolean {
         const pattern: RegExp = new RegExp("^(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$");
         const Password_Matches_Pattern: boolean = pattern.test(password);
         return Password_Matches_Pattern;
