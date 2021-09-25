@@ -21,8 +21,7 @@ export class CredentialsValidation implements credentials {
     }
     /**
      * Returns a boolean value that indicates whether or not the string is a password
-     * that includes with minimum eight characters, at least one uppercase letter,
-     * one lowercase letter and one number and one special character.
+     * that includes minimum eight characters, and one number and one special character.
      * @param {String} string - String on which to perform the validation.
      */
     Is_Password_with_At_Least_Eight_Characters_A_Number_A_Special_Character(password: string): boolean{
