@@ -54,6 +54,8 @@ var CredentialsValidation = /** @class */ (function () {
         var Password_Matches_Pattern = pattern.test(password);
         return Password_Matches_Pattern;
     };
+    CredentialsValidation.prototype.Is_Visa_Card_Number = function (number) {
+    };
     return CredentialsValidation;
 }());
 exports.CredentialsValidation = CredentialsValidation;

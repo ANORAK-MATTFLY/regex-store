@@ -16,5 +16,3 @@ var Url = /** @class */ (function () {
     return Url;
 }());
 exports.Url = Url;
-
-

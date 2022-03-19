@@ -51,4 +51,17 @@ export class CredentialsValidation implements credentials {
         const Password_Matches_Pattern: boolean = pattern.test(password);
         return Password_Matches_Pattern;
     }
+
+    Is_Visa_Card_Number(number: number){
+        const pattern: RegExp = new RegExp("/^(?:4[0-9]{12}(?:[0-9]{3})?)$/");
+        const stringifiedNumber = number.toString();
+        const Number_Matches_Pattern: boolean = pattern.test(stringifiedNumber);
+        return Number_Matches_Pattern;
+    }
+    Is_Master_Card_Number(number: number){
+        const pattern: RegExp = new RegExp("/^(?:5[1-5][0-9]{14})$/");
+        const stringifiedNumber: string = number.toString();
+        const Number_Matches_Pattern: boolean = pattern.test(stringifiedNumber);
+        return Number_Matches_Pattern;
+    }
 }
