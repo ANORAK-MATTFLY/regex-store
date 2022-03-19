@@ -55,6 +55,16 @@ var CredentialsValidation = /** @class */ (function () {
         return Password_Matches_Pattern;
     };
     CredentialsValidation.prototype.Is_Visa_Card_Number = function (number) {
+        var pattern = new RegExp("/^(?:4[0-9]{12}(?:[0-9]{3})?)$/");
+        var stringifiedNumber = number.toString();
+        var Number_Matches_Pattern = pattern.test(stringifiedNumber);
+        return Number_Matches_Pattern;
+    };
+    CredentialsValidation.prototype.Is_Master_Card_Number = function (number) {
+        var pattern = new RegExp("/^(?:5[1-5][0-9]{14})$/");
+        var stringifiedNumber = number.toString();
+        var Number_Matches_Pattern = pattern.test(stringifiedNumber);
+        return Number_Matches_Pattern;
     };
     return CredentialsValidation;
 }());
